@@ -1,0 +1,55 @@
+main{
+    background-color: hsl(217, 19%, 24%);
+    max-width: 25rem;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .header{
+    font-weight: 500;
+    font-size: .75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 5px;
+}
+
+.container .text{
+    min-height: 1rem;
+    color:hsl(193, 38%, 86%);
+    padding: 1.2rem 0;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: 'Acme', sans-serif;
+}
+
+.divider{
+    width: calc(100% - 1rem);
+    margin: 1rem 0;
+}
+
+#refresh__button{
+    width: 60px;
+    height: 60px;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    border-color: transparent;
+    position: absolute;
+    bottom: -30px;
+
+}
+
+@media screen and (max-width:320px) {
+    main{
+        max-width: 15rem;
+    }
+}
